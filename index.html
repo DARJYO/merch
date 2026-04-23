@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>DARJYO — Tech for a Greener Tomorrow</title>
+<title>DARJYO Merch</title>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header class="nav">
+<header class="navbar">
+
+<div class="container nav-inner">
 
 <img src="assets/logo.png" class="logo">
 
 <nav>
 <a href="#">Home</a>
 <a href="#products">Merch</a>
-<a href="#vision">Vision</a>
+<a href="#about">About</a>
 </nav>
+
+</div>
 
 </header>
 
 
+
 <section class="hero">
 
-<canvas id="hero-canvas"></canvas>
+<div class="container hero-inner">
 
-<div class="hero-content">
+<h1>DARJYO Tech Merch</h1>
 
-<h1>TECH FOR A<br>GREENER<br>TOMORROW</h1>
+<p>
+Minimal eco-tech apparel inspired by engineers, creators and builders.
+</p>
 
-<p>Limited Edition Eco Tech Merch</p>
-
-<a class="cta" href="#products">Explore Collection</a>
+<a href="#products" class="button">View Collection</a>
 
 </div>
 
 </section>
 
 
-<section class="vision" id="vision">
 
-<h2>Technology Meets Nature</h2>
+<section id="products" class="products">
 
-<p>
+<div class="container">
 
-DARJYO explores the intersection between computational systems
-and ecological design.
+<h2>Collection</h2>
 
-Inspired by engineering precision and organic materials.
+<div class="product-grid">
 
-</p>
-
-</section>
-
-
-<section class="products" id="products">
-
-<div class="product">
+<div class="card">
 <img src="assets/hoodie.jpg">
 <h3>Eco Hoodie</h3>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="assets/tshirt.jpg">
 <h3>Tech Tee</h3>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="assets/cap.jpg">
 <h3>Snapback</h3>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="assets/backpack.jpg">
 <h3>Explorer Pack</h3>
 </div>
 
-<div class="product">
+<div class="card">
 <img src="assets/bottle.jpg">
 <h3>Eco Bottle</h3>
+</div>
+
+</div>
+
 </div>
 
 </section>
 
 
-<section class="philosophy">
 
-<h2>Minimal. Experimental. Engineered.</h2>
+<section id="about" class="about">
+
+<div class="container">
+
+<h2>About DARJYO</h2>
 
 <p>
-A design language blending product engineering
-with editorial art direction.
+DARJYO explores the intersection between technology, sustainability,
+and modern engineering culture.
 </p>
+
+</div>
 
 </section>
 
 
+
 <footer>
+
+<div class="container">
 
 <p>© DARJYO</p>
 
+</div>
+
 </footer>
 
-
-<script src="lib/three.min.js"></script>
-<script src="app.js"></script>
 
 </body>
 </html>
