@@ -29,35 +29,21 @@
         </nav>
     </header>
 
-   <section class="relative min-h-screen overflow-hidden flex items-center">
-    
-    <div class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat w-full h-full"
-         style="background-image: url('assets/360.png');">
-         
-         <div class="absolute inset-0 bg-[#0a0a0a]/60 backdrop-blur-sm"></div>
-         
-         <div class="absolute inset-0" 
-              style="background-image: radial-gradient(circle at center, rgba(10,10,10,0.2) 0%, rgba(10,10,10,1) 90%);">
-         </div>
-    </div>
+ <section class="relative min-h-screen overflow-hidden flex items-center">
+    <div id="pano-container" class="absolute inset-0 z-0"></div>
 
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10 py-32 md:py-0">
-        <div class="bg-black/40 p-8 md:p-12 rounded-3xl backdrop-blur-md border border-white/5">
-            <span class="text-[#6cff4d] text-sm font-bold tracking-[0.3em] uppercase mb-4 block">Immersive Virtual Drop</span>
+    <div class="max-w-7xl mx-auto px-6 relative z-10 pointer-events-none">
+        <div class="max-w-xl bg-black/20 p-8 md:p-12 rounded-3xl backdrop-blur-md border border-white/5 pointer-events-auto">
+            <span class="text-[#6cff4d] text-sm font-bold tracking-[0.3em] uppercase mb-4 block">Virtual Experience</span>
             <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-none mb-6">
-                DARJYO<br><span class="text-transparent" style="-webkit-text-stroke: 1px white;">BRAND WORLD</span>
+                DARJYO<br><span class="text-transparent" style="-webkit-text-stroke: 1px white;">WORLD</span>
             </h1>
-            <p class="text-gray-400 text-lg max-w-md mb-10 leading-relaxed">
-                Premium gear. Conscious impact. <br>Explore our new innovative <br> sustainable technology storefront.
+            <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+                Drag to explore our flagship sustainable showroom.
             </p>
-            <div class="flex space-x-4">
-                <a href="#products" class="bg-[#6cff4d] text-black px-8 py-4 font-bold uppercase text-xs tracking-widest hover:bg-white transition">Explore Collection</a>
-            </div>
+            <a href="#products" class="inline-block bg-[#6cff4d] text-black px-8 py-4 font-bold uppercase text-xs tracking-widest hover:bg-white transition">Shop Collection</a>
         </div>
-        
-        <div class="hidden md:block"></div>
     </div>
-    
 </section>
 
 <section id="products" class="max-w-7xl mx-auto px-6 py-32">
