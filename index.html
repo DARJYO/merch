@@ -1,200 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>DARJYO Merch</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARJYO Merch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-
-<body>
-
-<header class="navbar">
-
-<div class="container nav-inner">
-
-<img src="assets/logo.png" class="logo" alt="DARJYO">
-
-<nav>
-<a href="#">Home</a>
-<a href="#products">Merch</a>
-<a href="#about">About</a>
-</nav>
-
-</div>
-
-</header>
-
-
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="container hero-grid">
-
-<div class="hero-text">
-
-<h1>Eco Tech Merch<br>by DARJYO</h1>
-
-<p>
-Minimal apparel inspired by engineers, builders and creators working
-at the intersection of technology and sustainability.
-</p>
-
-<a href="#products" class="button">Explore Collection</a>
-
-</div>
-
-<div class="hero-visual">
-
-<img src="assets/hoodie.jpg" alt="DARJYO hoodie">
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- PRODUCTS -->
-
-<section class="products" id="products">
-
-<div class="container">
-
-<h2 class="section-title">Collection</h2>
-
-<div class="product-grid">
-
-
-
-<div class="card">
-
-<img src="assets/hoodie.jpg" alt="Eco Hoodie">
-
-<div class="card-content">
-<h3>Eco Hoodie</h3>
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="assets/tshirt.jpg" alt="Tech Tee">
-
-<div class="card-content">
-<h3>Tech Tee</h3>
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="assets/cap.jpg" alt="Snapback">
-
-<div class="card-content">
-<h3>Snapback</h3>
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="assets/backpack.jpg" alt="Backpack">
-
-<div class="card-content">
-<h3>Explorer Pack</h3>
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="assets/bottle.jpg" alt="Bottle">
-
-<div class="card-content">
-<h3>Eco Bottle</h3>
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<img src="assets/tshirt.jpg" alt="Limited Tee">
-
-<div class="card-content">
-<h3>Limited Edition Tee</h3>
-</div>
-
-</div>
-
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-<div class="container">
-
-<h2 class="section-title">About DARJYO</h2>
-
-<p>
-
-DARJYO explores the intersection of technology, sustainability and
-modern engineering culture. The merch collection reflects the same
-principles: minimal design, thoughtful materials and a forward-looking
-tech aesthetic.
-
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="container">
-
-<p>© DARJYO</p>
-
-</div>
-
-</footer>
-
-<script src="lib/three.min.js"></script>
-<script src="app.js"></script>
+<body class="bg-gray-50 text-gray-900">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <img src="assets/logo.png" class="h-8 w-auto" alt="DARJYO">
+            <div class="space-x-6 font-medium text-gray-600">
+                <a href="#" class="hover:text-black transition">Home</a>
+                <a href="#products" class="hover:text-black transition">Merch</a>
+                <a href="#about" class="hover:text-black transition">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-20 md:py-32 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Eco Tech Merch<br><span class="text-indigo-600">by DARJYO</span></h1>
+            <p class="text-lg text-gray-600 mb-8">Minimal apparel inspired by engineers, builders and creators working at the intersection of technology and sustainability.</p>
+            <a href="#products" class="bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800 transition">Explore Collection</a>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+            <img src="assets/hoodie.jpg" alt="DARJYO hoodie" class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <section id="products" class="max-w-6xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold mb-12">Collection</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+                <img src="assets/hoodie.jpg" alt="Eco Hoodie" class="rounded-lg mb-4 w-full h-64 object-cover">
+                <h3 class="font-semibold text-lg">Eco Hoodie</h3>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+                <img src="assets/tshirt.jpg" alt="Tech Tee" class="rounded-lg mb-4 w-full h-64 object-cover">
+                <h3 class="font-semibold text-lg">Tech Tee</h3>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+                <img src="assets/cap.jpg" alt="Snapback" class="rounded-lg mb-4 w-full h-64 object-cover">
+                <h3 class="font-semibold text-lg">Snapback</h3>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+                <img src="assets/backpack.jpg" alt="Backpack" class="rounded-lg mb-4 w-full h-64 object-cover">
+                <h3 class="font-semibold text-lg">Explorer Pack</h3>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+                <img src="assets/bottle.jpg" alt="Bottle" class="rounded-lg mb-4 w-full h-64 object-cover">
+                <h3 class="font-semibold text-lg">Eco Bottle</h3>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition">
+                <img src="assets/tshirt.jpg" alt="Limited Tee" class="rounded-lg mb-4 w-full h-64 object-cover">
+                <h3 class="font-semibold text-lg">Limited Edition Tee</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white py-20">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">About DARJYO</h2>
+            <p class="text-gray-600 leading-relaxed">
+                DARJYO explores the intersection of technology, sustainability and modern engineering culture. The merch collection reflects the same principles: minimal design, thoughtful materials and a forward-looking tech aesthetic.
+            </p>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-500 text-sm">
+        © 2026 DARJYO
+    </footer>
 
 </body>
-
 </html>
