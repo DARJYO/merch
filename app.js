@@ -9,9 +9,8 @@ window.innerWidth/window.innerHeight,
 1000
 )
 
-const renderer = new THREE.WebGLRenderer({canvas,alpha:true})
-
-renderer.setSize(window.innerWidth,window.innerHeight)
+const container = canvas.parentElement;
+renderer.setSize(container.clientWidth, container.clientHeight);
 
 camera.position.z = 3
 
@@ -53,11 +52,9 @@ renderer.render(scene,camera)
 animate()
 
 
-window.addEventListener("resize",()=>{
-
-renderer.setSize(window.innerWidth,window.innerHeight)
-
-camera.aspect = window.innerWidth/window.innerHeight
-camera.updateProjectionMatrix()
-
+window.addEventListener("resize", () => {
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
 })
+
